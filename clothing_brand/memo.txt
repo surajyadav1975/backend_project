@@ -1,0 +1,6 @@
+you need to setup all environmental variable
+
+NODE_ENV=dev
+DEBUG=dev:*
+EXPRESS_SESSION_SECRET=dev
+JWT_KEY=jndfjbubfjhbfkd
