@@ -9,6 +9,7 @@ const productsRouter =require("./routes/productsRouter");
 const indexRouter=require("./routes");
 const expressSession=require("express-session");
 const flash=require("connect-flash");
+const PORT=process.env.PORT || 3000;
 require("dotenv").config();
 
 app.use(express.json());
@@ -30,4 +31,4 @@ app.use("/owners",ownersRouter);
 app.use("/users",usersRouter);
 app.use("/products",productsRouter);
 
-app.listen(3000);
+app.listen(PORT);
